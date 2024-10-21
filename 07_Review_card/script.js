@@ -30,3 +30,22 @@ btn[3].onclick = function () {
   }
   this.classList.add("active");
 };
+
+// Effect
+const column_1 = document.getElementById("column-1");
+column_1.addEventListener("mousemove", (event) => {
+  const PositionX = event.offsetX;
+  const PositionY = event.offsetY;
+  const spanElement = document.createElement("span");
+  spanElement.classList.add("span");
+  const size = Math.floor(10 + Math.random() * 50);
+  spanElement.style.width = `${size}px`;
+  spanElement.style.height = `${size}px`;
+  spanElement.style.top = PositionY + "px";
+  spanElement.style.left = PositionX + "px";
+
+  column_1.appendChild(spanElement);
+  setTimeout(() => {
+    spanElement.remove();
+  }, 3000);
+});

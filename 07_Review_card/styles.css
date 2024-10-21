@@ -97,3 +97,32 @@
   height: 100%;
   overflow: hidden;
 }
+
+/* Effect */
+.span {
+  background: url("https://cdn0.iconfinder.com/data/icons/social-reaction-and-emoji/519/like-256.png");
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-size: cover;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s linear;
+  animation: animate 6s linear;
+  pointer-events: none;
+  z-index: 2;
+}
+@keyframes animate {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    filter: hue-rotate(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -5000%);
+    filter: hue-rotate(720deg);
+  }
+}
