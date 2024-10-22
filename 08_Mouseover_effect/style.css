@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: #000000;
+}
+span {
+  background: url("https://cdn0.iconfinder.com/data/icons/seo-web-4-1/128/Vigor_Idea-Coding-Light_Bulb-invention-256.png");
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animate 6s linear;
+  pointer-events: none;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    filter: hue-rotate(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -5000%);
+    filter: hue-rotate(720deg);
+  }
+}
