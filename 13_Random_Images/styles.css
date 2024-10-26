@@ -20,19 +20,43 @@ body {
   width: 300px;
   height: 300px;
 }
+
 a {
   text-decoration: none;
-  color: rgb(255, 237, 237);
+  color: rgb(129, 72, 72);
   font-weight: 700;
+  font-size: 18px;
 }
 .btn {
   background: rgb(43, 0, 0);
-  border: 0;
   padding: 1rem 2rem;
   margin: 20px;
   border-radius: 0.5rem;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.438);
+  position: relative;
+  overflow: hidden;
+  border: 0;
 }
-.btn:hover {
-  opacity: 0.9;
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #ffffff;
+  left: var(--xPosition);
+  top: var(--yPosition);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+}
+
+.btn span {
+  z-index: 1;
+  position: relative;
+}
+
+.btn:hover::before {
+  width: 400px;
+  height: 400px;
 }
