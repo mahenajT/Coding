@@ -34,8 +34,6 @@ body {
   border-radius: 0.5rem;
   margin-bottom: 20px;
 }
-.bottom {
-}
 .bottom a {
   text-decoration: none;
   color: var(--Gray-950);
