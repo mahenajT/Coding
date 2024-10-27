@@ -1,0 +1,74 @@
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Gray-500: hsl(0, 0%, 42%);
+  --Gray-950: hsl(0, 0%, 7%);
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Yellow);
+  font-family: "Figtree", sans-serif;
+}
+
+.container {
+  background: var(--White);
+  padding: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+}
+.top img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 20px;
+}
+.bottom {
+}
+.bottom a {
+  text-decoration: none;
+  color: var(--Gray-950);
+  font-size: 13px;
+  font-weight: bold;
+  background: var(--Yellow);
+  padding: 7px 15px;
+  border-radius: 0.3rem;
+}
+.bottom .publish {
+  margin: 20px 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+.bottom h2 {
+  font-weight: 800;
+  font-size: 20px;
+}
+.bottom .paragraph {
+  margin: 20px 0;
+  font-size: 16px;
+  color: var(--Gray-500);
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.user img {
+  width: 40px;
+}
+.user h4 {
+  font-size: 15px;
+  font-weight: 800;
+}
