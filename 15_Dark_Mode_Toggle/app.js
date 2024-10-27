@@ -1,6 +1,11 @@
 const checkInput = document.querySelector(".input");
 const body = document.querySelector("body");
 
+// Get the saved mode from localStorage and set the checkbox state
+checkInput.checked = JSON.parse(localStorage.getItem("mode"));
+updateBackground()
+
+ 
 function updateBackground() {
   if (checkInput.checked) {
     // True
@@ -10,6 +15,11 @@ function updateBackground() {
     body.style.backgroundColor = "white";
   }
 }
-checkInput.addEventListener("click", ()=>{
-    updateBackground()
+checkInput.addEventListener("click", () => {
+  updateBackground();
+  updateLocalStorage();
 });
+
+function updateLocalStorage() {
+  localStorage.setItem("mode", JSON.stringify(checkInput.checked));
+}
