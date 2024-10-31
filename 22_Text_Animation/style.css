@@ -1,0 +1,66 @@
+/* Two Types Of Text Animation */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 6%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0.3rem 1.3rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  /* For Stroke text */
+  /* -webkit-text-stroke: 1px #fff; */
+  color: transparent;
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -850px 0;
+  animation: backgroundColor 5s linear infinite alternate;
+}
+@keyframes backgroundColor {
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 5rem;
+    background-position: -550px 0;
+  }
+  nav ul li {
+    margin: 0 0.5rem;
+  }
+}
