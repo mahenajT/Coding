@@ -5,19 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Slider</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="app.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="slide">
-        <div
-          class="item"
-          style="
-            background-image: url(images/img-1.jpg);
-            background-size: cover;
-            background-position: center;
-          "
-        >
+        <div class="item" style="background-image: url(images/img-2.jpg)">
+          <div class="content">
+            <div class="name">Germany</div>
+            <div class="description">
+              Germany is known as the land of poets and thinkers, producing
+              famous figures like Beethoven, Goethe, and Einstein.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(images/img-1.jpg)">
           <div class="content">
             <div class="name">Switzerland</div>
             <div class="description">
@@ -27,6 +37,81 @@
             <button>See More</button>
           </div>
         </div>
+
+        <div class="item" style="background-image: url(images/img-3.jpg)">
+          <div class="content">
+            <div class="name">Luxembourg</div>
+            <div class="description">
+              Luxembourg is one of the world's smallest countries but boasts one
+              of the highest GDP per capita, thanks to its strong finance and
+              banking sector.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/img-4.jpg)">
+          <div class="content">
+            <div class="name">Finland</div>
+            <div class="description">
+              Finland has the most lakes per capita in the world, with over
+              188,000 lakes scattered across the country’s landscape.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/img-5.jpg)">
+          <div class="content">
+            <div class="name">Iceland</div>
+            <div class="description">
+              There are no mosquitoes in Iceland, thanks to its unique climate
+              and ecology—making it a rare, bug-free destination!
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/img-6.jpg)">
+          <div class="content">
+            <div class="name">Greenland</div>
+            <div class="description">
+              Despite its name, Greenland has very little greenery—its name was
+              actually a marketing effort by early Norse settlers to attract
+              more inhabitants!
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/img-7.jpg)">
+          <div class="content">
+            <div class="name">Netherland</div>
+            <div class="description">
+              Flowers have their own secret language; in the Victorian era, each
+              flower had a specific meaning, allowing people to send coded
+              messages through bouquets.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+
+        <div class="item" style="background-image: url(images/img-8.jpg)">
+          <div class="content">
+            <div class="name">Ireland</div>
+            <div class="description">
+              Ireland is home to over 30,000 castles and castle ruins, with some
+              dating back to the 11th century, making it a haven for history
+              lovers.
+            </div>
+            <button>See More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
   </body>
