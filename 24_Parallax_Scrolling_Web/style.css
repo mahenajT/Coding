@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav h2 {
+  color: green;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 1rem;
+}
