@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+}
+.split.left {
+  position: absolute;
+  left: 0;
+  background-image: url(images/img-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s linear;
+}
+.split.right {
+  position: absolute;
+  right: 0;
+  background-image: url(images/img-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s linear;
+}
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  backdrop-filter: brightness(0.5);
+  letter-spacing: 4px;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: #000000;
+  color: #fff;
+  outline: 0;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  border: 0;
+  transition: 0.2s linear;
+  white-space: nowrap;
+  margin-top: 1rem;
+}
+.btn:hover {
+  outline: 4px solid #fff;
+}
+.active-left .left {
+  width: 75%;
+  transition: 0.5s linear;
+}
+.active-left .right {
+  width: 25%;
+  transition: 0.5s linear;
+}
+.active-right .left {
+  width: 25%;
+  transition: 0.5s linear;
+}
+.active-right .right {
+  width: 75%;
+  transition: 0.5s linear;
+}
