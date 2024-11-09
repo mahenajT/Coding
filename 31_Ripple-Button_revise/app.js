@@ -1,9 +1,8 @@
 const button = document.querySelector(".btn");
 
 /**
- * addEventListener to Track the mouse mouse event when we move the mouse inside the button
+ * .addEventListener to Track the mouse event when we move the mouse inside the button
  * event -> TO get the position of the X, Y and anything inside related to this mouseover event
- *
  * Mouse Event's Property - pageX
  * To Set Values of the x, y here, instead of Center we just get any point that the mouse is entering by (left and Top property)
  * Unfortunately we don't have direct access to the ::before pseudo element/class
