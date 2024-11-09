@@ -25,6 +25,9 @@ button.addEventListener("mouseover", (event) => {
   console.log(event.pageX - button.offsetLeft); // horizontal
   const xPosition = event.pageX - button.offsetLeft; //to get the mouse's position relative to the button itself, rather than the whole page.
   const yPosition = event.pageY - button.offsetTop;
+
+  // const xPosition = event.offsetX; // These two will also work
+  // const yPosition = event.offsetY;
   button.style.setProperty("--xPosition", xPosition + "px"); // --xPosition === xPosition
   button.style.setProperty("--yPosition", yPosition + "px"); // --yPosition === yPosition
 });
