@@ -38,3 +38,13 @@ function updateTimer() {
   timer.innerHTML = formattedTime;
 }
 // Method in JavaScript - > PadStart
+
+/** This code gives me practice with:
+ 
+ * DOM manipulation and event handling.
+ * Working with setInterval and clearInterval.
+ * JavaScript conditionals and assignment vs. comparison.
+ * String formatting with padStart.
+ * Structuring code in functions and managing UI state.
+ 
+ */
