@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #f0f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.content {
+  background-color: #fff;
+  margin: 0 1rem;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2),
+    -6px -6px 10px rgba(255, 255, 255, 0.7); /* neumorphism shadow */
+  border-radius: 0.5rem;
+  padding: 2rem 5rem;
+  min-width: 500px;
+}
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  max-width: 300px;
+}
+button {
+  color: #fff;
+  padding: 0.5em 1em;
+  font-size: 14px;
+  border-radius: 0.5em;
+  background: #3f8eff;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  margin: 1rem 0;
+  &:hover {
+    opacity: 80%;
+  }
+}
+
+#result {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.age {
+  color: #f51e15;
+}
