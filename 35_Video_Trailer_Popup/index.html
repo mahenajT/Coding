@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Popup</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <div class="content">
+          <img src="assets/image.jpg" alt="image" />
+          <h1>Movie Trailer</h1>
+          <p>
+            Bhutan is the only country in the world that measures success by
+            Gross National Happiness (GNH) rather than Gross Domestic Product
+            (GDP)! GNH takes into account sustainable development, environmental
+            conservation, cultural preservation, and good governance. This
+            approach helps Bhutan focus on the well-being of its people over
+            material wealth.
+          </p>
+          <button class="btn">Watch Now</button>
+        </div>
+        <div class="trailer-container active">
+          <video src="https://videocdn.cdnpk.net/videos/54ad8fe3-3fa0-41a9-a97f-c64844427096/horizontal/previews/clear/large.mp4?token=exp=1731759832~hmac=0e1e0c89e65417eaae0bdd7126c23f740fa1cdee567a5f8c3163752a9f1248bb" controls="true"></video>
+          <img
+            src="assets/calcel.png"
+            alt="cancel"
+            width="25"
+            class="close-btn"
+          />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
